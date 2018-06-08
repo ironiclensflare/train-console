@@ -1,4 +1,5 @@
 ﻿using System;
+using static LDBWS.LDBServiceSoapClient;
 
 namespace trains
 {
@@ -6,7 +7,10 @@ namespace trains
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var token = Environment.GetEnvironmentVariable("LDBWS_TOKEN");
+            var client = new LDBWS.LDBServiceSoapClient(EndpointConfiguration.LDBServiceSoap);
+            var task = client.GetArrBoardWithDetailsAsync(new LDBWS.AccessToken{TokenValue = token}, 10, "NOT", null, LDBWS.FilterType.to, 0, 10);
+            task.Wait();
         }
     }
 }
