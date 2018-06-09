@@ -9,22 +9,24 @@ namespace trains.test
     [TestFixture]
     public class TrainServiceTests
     {
-        [TestCase(null)]
-        [TestCase("")]
-        public void GetTrainsTo_NullOrEmptyCrs_ShouldThrowArgumentException(string crs)
+        [TestCase(null, null)]
+        [TestCase("", "")]
+        [TestCase("", null)]
+        [TestCase(null, "")]
+        public void GetTrainsTo_NullOrEmptyCrs_ShouldThrowArgumentException(string crsFrom, string crsTo)
         {
             var service = new TrainService();
 
-            Assert.Throws<ArgumentException>(() => service.GetTrainsTo(crs));
+            Assert.Throws<ArgumentException>(() => service.GetTrainsTo(crsFrom, crsTo));
         }
 
-        [TestCase("NOT")]
-        [TestCase("BHM")]
-        public void GetTrainsTo_ValidCrs_ShouldReturnTrains(string crs)
+        [TestCase("NOT", "BHM")]
+        [TestCase("BHM", "NOT")]
+        public void GetTrainsTo_ValidCrs_ShouldReturnTrains(string crsFrom, string crsTo)
         {
             var service = new TrainService();
 
-            var trains = service.GetTrainsTo(crs);
+            var trains = service.GetTrainsTo(crsFrom, crsTo);
 
             Assert.NotNull(trains);
             Assert.IsNotEmpty(trains);

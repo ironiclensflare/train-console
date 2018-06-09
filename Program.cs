@@ -9,7 +9,7 @@ namespace trains
         static void Main(string[] args)
         {
             var service = new TrainService();
-            var departures = service.GetTrainsTo("NOT");
+            var departures = service.GetTrainsTo("NOT", "BHM");
         }
     }
 }

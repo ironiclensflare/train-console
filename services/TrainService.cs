@@ -20,15 +20,15 @@ namespace trains.services
             _ldbService = ldbService;
         }
 
-        public IEnumerable<object> GetTrainsTo(string crs)
+        public IEnumerable<object> GetTrainsTo(string crsFrom, string crsTo)
         {
-            if (string.IsNullOrEmpty(crs)) throw new ArgumentException ("CRS cannot be null or empty.");
+            if (string.IsNullOrEmpty(crsFrom) || string.IsNullOrEmpty(crsTo)) throw new ArgumentException ("CRS cannot be null or empty.");
             var trains = _ldbService.GetDepartureBoardAsync
             (
                 new LDBWS.AccessToken{TokenValue = Environment.GetEnvironmentVariable("LDBWS_TOKEN")},
                 10,
-                crs.ToUpper(),
-                null,
+                crsFrom.ToUpper(),
+                crsTo.ToUpper(),
                 LDBWS.FilterType.to,
                 0,
                 10
