@@ -20,7 +20,7 @@ namespace trains.services
             _ldbService = ldbService;
         }
 
-        public IEnumerable<object> GetTrainsTo(string crsFrom, string crsTo)
+        public IEnumerable<ServiceItem2> GetTrainsTo(string crsFrom, string crsTo)
         {
             if (string.IsNullOrEmpty(crsFrom) || string.IsNullOrEmpty(crsTo)) throw new ArgumentException ("CRS cannot be null or empty.");
             var trains = _ldbService.GetDepartureBoardAsync

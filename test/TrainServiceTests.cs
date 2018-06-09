@@ -20,6 +20,7 @@ namespace trains.test
             Assert.Throws<ArgumentException>(() => service.GetTrainsTo(crsFrom, crsTo));
         }
 
+        [Ignore("Re-enable this once LDB API is stubbed")]
         [TestCase("NOT", "BHM")]
         [TestCase("BHM", "NOT")]
         public void GetTrainsTo_ValidCrs_ShouldReturnTrains(string crsFrom, string crsTo)
