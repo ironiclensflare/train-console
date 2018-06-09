@@ -1,0 +1,5 @@
+language: csharp
+solution: trains.csproj
+script:
+  - dotnet build
+  - dotnet test
