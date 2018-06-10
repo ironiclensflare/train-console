@@ -31,7 +31,7 @@ namespace trains.services
                 crsTo.ToUpper(),
                 LDBWS.FilterType.to,
                 0,
-                10
+                60
             );
             trains.Wait();
             return trains.Result.GetStationBoardResult.trainServices;
