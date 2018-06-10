@@ -9,8 +9,34 @@ namespace trains
     {
         static void Main(string[] args)
         {
-            var crsFrom = args[0];
-            var crsTo = args[1];
+            switch(args[0])
+            {
+                case "arriving": case "arr":
+                    // TODO: Add arrivals functionality
+                    break;
+                case "departing": case "dep":
+                    GetDepartures(args);
+                    break;
+                default:
+                    GetDepartures(args);
+                    break;
+            }
+        }
+
+        static void GetDepartures(string[] args)
+        {   
+            string crsFrom, crsTo;
+            if (args[0] == "departing" || args[0] == "dep")
+            {
+                crsFrom = args[1];
+                crsTo = args[2];
+            }
+            else 
+            {
+                crsFrom = args[0];
+                crsTo = args[1];
+            }
+
             var service = new TrainService();
             var departures = service.GetTrainsTo(crsFrom, crsTo);
             Console.WriteLine($"There are {departures.Count()} total departures.");
