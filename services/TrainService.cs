@@ -36,5 +36,21 @@ namespace trains.services
             trains.Wait();
             return trains.Result.GetStationBoardResult.trainServices;
         }
+
+        public IEnumerable<ServiceItem2> GetTrainsFrom(string crsTo, string crsFrom)
+        {
+            var trains = _ldbService.GetArrivalBoardAsync
+            (
+                new LDBWS.AccessToken{TokenValue = Environment.GetEnvironmentVariable("LDBWS_TOKEN")},
+                10,
+                crsTo.ToUpper(),
+                crsFrom.ToUpper(),
+                LDBWS.FilterType.from,
+                0,
+                60
+            );
+            trains.Wait();
+            return trains.Result.GetStationBoardResult.trainServices;    
+        }
     }
 }

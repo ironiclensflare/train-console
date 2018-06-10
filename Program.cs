@@ -49,8 +49,11 @@ namespace trains
             string crsTo, crsFrom;
             crsTo = args[1];
             crsFrom = args.Length == 3 ? args[2] : null;
-            // TODO: Add functionality
+            var service = new TrainService();
+            var arrivals = service.GetTrainsFrom(crsTo, crsFrom);
+            var times = arrivals.Select(a => $"{a.sta} {a.origin[0].locationName} ({a.eta}) - Platform {a.platform ?? "Unknown"}");
             Console.WriteLine($"Showing arrivals into {crsTo} from {crsFrom ?? "everywhere"}.");
+            Console.WriteLine(string.Join(Environment.NewLine, times));
         }
     }
 }
