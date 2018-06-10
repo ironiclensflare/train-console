@@ -12,7 +12,7 @@ namespace trains
             switch(args[0])
             {
                 case "arriving": case "arr":
-                    // TODO: Add arrivals functionality
+                    GetArrivals(args);
                     break;
                 case "departing": case "dep":
                     GetDepartures(args);
@@ -42,6 +42,15 @@ namespace trains
             Console.WriteLine($"There are {departures.Count()} total departures.");
             var times = departures.Select(d => $"{d.std} ({d.etd}) - Platform {d.platform}");
             Console.WriteLine(string.Join(Environment.NewLine, times));
+        }
+
+        static void GetArrivals(string[] args)
+        {
+            string crsTo, crsFrom;
+            crsTo = args[1];
+            crsFrom = args.Length == 3 ? args[2] : null;
+            // TODO: Add functionality
+            Console.WriteLine($"Showing arrivals into {crsTo} from {crsFrom ?? "everywhere"}.");
         }
     }
 }
