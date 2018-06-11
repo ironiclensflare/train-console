@@ -9,10 +9,26 @@ It is a major work in progress and more functionality will be added over time.
 
 You will need to [register and obtain an access token](http://realtime.nationalrail.co.uk/OpenLDBWSRegistration) for the OpenLDBWS API. Once you've done this set it as an environment variable called `LDBWS_TOKEN`
 
-To use the app, simply run it with two arguments - the [CRS codes](http://www.railwaycodes.org.uk/crs/CRS0.shtm) for the origin and destination stations.
+### Departures
+
+To see a list of departures, simply run the app with two arguments - the [CRS codes](http://www.railwaycodes.org.uk/crs/CRS0.shtm) for the origin and destination stations.
 
 ```bash
 trains bhm not
+```
+
+### Arrivals
+
+You can see a list of arrivals for the given station by using the `arrivals (arr)` command:
+
+```bash
+trains arr not
+```
+
+If you're only interested in trains from a given origin, you can pass it as an optional second parameter:
+
+```bash
+trains arr not stp
 ```
 
 ## Compiling
