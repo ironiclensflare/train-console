@@ -1,0 +1,436 @@
+[
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "Gatwick Airport",
+        "crs": "GTW",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      },
+      {
+        "locationName": "Reigate",
+        "crs": "REI",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": "SN100401",
+    "sta": "08:52",
+    "eta": "08:55",
+    "std": null,
+    "etd": null,
+    "platform": "17",
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 16,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "VlvC0Pv90A5Zzi+BlAluvw==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "Eastbourne",
+        "crs": "EBN",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": "SN696700",
+    "sta": "08:54",
+    "eta": "09:07",
+    "std": null,
+    "etd": null,
+    "platform": "16",
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 8,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": "This train has been delayed by police dealing with an incident",
+    "serviceID": "QaYq45pQIdOprBszFcelHA==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "London Bridge",
+        "crs": "LBG",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": null,
+    "sta": "08:54",
+    "eta": "On time",
+    "std": null,
+    "etd": null,
+    "platform": "9",
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 0,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "nOJFSURerL3YDdI00ZhUEQ==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "Dorking",
+        "crs": "DKG",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": "TL052800",
+    "sta": "09:03",
+    "eta": "Cancelled",
+    "std": null,
+    "etd": null,
+    "platform": null,
+    "operator": "Thameslink",
+    "operatorCode": "TL",
+    "isCircularRoute": false,
+    "isCancelled": true,
+    "filterLocationCancelled": true,
+    "serviceType": 0,
+    "length": 0,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": "This train has been cancelled because of a broken down train earlier today",
+    "delayReason": null,
+    "serviceID": "4iwD0NuyCaTh0l6+Ti/ywg==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "Sutton (Surrey)",
+        "crs": "SUO",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": "SN239500",
+    "sta": "09:04",
+    "eta": "On time",
+    "std": null,
+    "etd": null,
+    "platform": "11",
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 0,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "aIIDHx58UawccvW43n6JOw==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "East Grinstead",
+        "crs": "EGR",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": null,
+    "sta": "09:05",
+    "eta": "On time",
+    "std": null,
+    "etd": null,
+    "platform": "18",
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 8,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "4UyAPHrIDEYXNqRSiNT6fw==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "Littlehampton",
+        "crs": "LIT",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": "SN715300",
+    "sta": "09:08",
+    "eta": "09:10",
+    "std": null,
+    "etd": null,
+    "platform": "15",
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 0,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "XtCg8dtfxeLrrz5S5AVHcA==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "West Croydon",
+        "crs": "WCY",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": "SN780900",
+    "sta": "09:08",
+    "eta": "On time",
+    "std": null,
+    "etd": null,
+    "platform": "10",
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 0,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "LFVv4L9oB/1DLyizohCEsg==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "Epsom Downs",
+        "crs": "EPD",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": null,
+    "sta": "09:10",
+    "eta": "On time",
+    "std": null,
+    "etd": null,
+    "platform": "9",
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 0,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "mYmNwEK+WiqtGzb3cv9Qig==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "Bognor Regis",
+        "crs": "BOG",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      },
+      {
+        "locationName": "Southampton Central",
+        "crs": "SOU",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": "SN130301",
+    "sta": "09:10",
+    "eta": "09:12",
+    "std": null,
+    "etd": null,
+    "platform": "19",
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 12,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "CG+HfVwfFwnAoI1JCIxfsw==",
+    "adhocAlerts": null
+  }
+]

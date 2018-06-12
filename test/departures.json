@@ -1,0 +1,429 @@
+[
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "London Bridge",
+        "crs": "LBG",
+        "via": "via Crystal Palace",
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": "SN268200",
+    "sta": null,
+    "eta": null,
+    "std": "08:50",
+    "etd": "On time",
+    "platform": null,
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 0,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "ApHaWo2RiiKbou+FQ7LazQ==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "East Grinstead",
+        "crs": "EGR",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": null,
+    "sta": null,
+    "eta": null,
+    "std": "08:51",
+    "etd": "On time",
+    "platform": "16",
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 12,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "K+IeuDihQvp3ZSqJqIIfBQ==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "Brighton",
+        "crs": "BTN",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": "SN193800",
+    "sta": null,
+    "eta": null,
+    "std": "08:55",
+    "etd": "On time",
+    "platform": "18",
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 0,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "uQ3CXIeh7htxzoT/b+NB5w==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "Dorking",
+        "crs": "DKG",
+        "via": "via Sutton & Epsom",
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": "TL053100",
+    "sta": null,
+    "eta": null,
+    "std": "08:55",
+    "etd": "On time",
+    "platform": "12",
+    "operator": "Thameslink",
+    "operatorCode": "TL",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 0,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "6kIiQ6W2FLzDYb0wWZ7q4g==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "East Croydon",
+        "crs": "ECR",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": "SN225300",
+    "sta": null,
+    "eta": null,
+    "std": "08:57",
+    "etd": "On time",
+    "platform": "13",
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 5,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "2oNvT/yS5l5pOc/nXaFPZw==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "Epsom Downs",
+        "crs": "EPD",
+        "via": "via Norbury",
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": null,
+    "sta": null,
+    "eta": null,
+    "std": "09:00",
+    "etd": "On time",
+    "platform": "10",
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 0,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "5S7wg2/P2jf3Jl/dHegPOQ==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "Portsmouth Harbour",
+        "crs": "PMH",
+        "via": "via Horsham ",
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      },
+      {
+        "locationName": "Bognor Regis",
+        "crs": "BOG",
+        "via": "via Horsham ",
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": "SN230303",
+    "sta": null,
+    "eta": null,
+    "std": "09:06",
+    "etd": "On time",
+    "platform": null,
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 12,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "gUz3zO1rRTuQYo/OC7FKhA==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "West Croydon",
+        "crs": "WCY",
+        "via": "via Crystal Palace",
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": "SN781000",
+    "sta": null,
+    "eta": null,
+    "std": "09:07",
+    "etd": "On time",
+    "platform": null,
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 0,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "B5zPSjN5eA7CS9MWmLN3lg==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "Reigate",
+        "crs": "REI",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": null,
+    "sta": null,
+    "eta": null,
+    "std": "09:09",
+    "etd": "On time",
+    "platform": null,
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 0,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "MYrIeqD2eAAfZ3BO6pReLA==",
+    "adhocAlerts": null
+  },
+  {
+    "formation": null,
+    "origin": [
+      {
+        "locationName": "London Victoria",
+        "crs": "VIC",
+        "via": null,
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "destination": [
+      {
+        "locationName": "Epsom",
+        "crs": "EPS",
+        "via": "via Hackbridge",
+        "futureChangeTo": null,
+        "assocIsCancelled": false
+      }
+    ],
+    "currentOrigins": null,
+    "currentDestinations": null,
+    "rsid": null,
+    "sta": null,
+    "eta": null,
+    "std": "09:11",
+    "etd": "On time",
+    "platform": null,
+    "operator": "Southern",
+    "operatorCode": "SN",
+    "isCircularRoute": false,
+    "isCancelled": false,
+    "filterLocationCancelled": false,
+    "serviceType": 0,
+    "length": 7,
+    "detachFront": false,
+    "isReverseFormation": false,
+    "cancelReason": null,
+    "delayReason": null,
+    "serviceID": "QGT9W+4Tn14GCjGZi9aZ9Q==",
+    "adhocAlerts": null
+  }
+]
