@@ -17,9 +17,15 @@ To see a list of departures, simply run the app with two arguments - the [CRS co
 trains bhm not
 ```
 
+You can also use the `departing (dep)` command:
+
+```bash
+trains dep bhm not
+```
+
 ### Arrivals
 
-You can see a list of arrivals for the given station by using the `arrivals (arr)` command:
+You can see a list of arrivals for the given station by using the `arriving (arr)` command:
 
 ```bash
 trains arr not
