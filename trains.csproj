@@ -15,4 +15,12 @@
     <PackageReference Include="System.ServiceModel.Primitives" Version="4.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="test\arrivals.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\departures.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
