@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using trains.services;
-using static LDBWS.LDBServiceSoapClient;
 
 namespace trains
 {
