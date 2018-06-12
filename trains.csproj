@@ -16,11 +16,23 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="test\arrivals.json" />
+    <None Remove="test\departures.json" />
+  </ItemGroup>
+  <ItemGroup>
     <None Update="test\arrivals.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="test\departures.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="test\arrivals.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="test\departures.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 </Project>

@@ -63,7 +63,7 @@ namespace trains.test
 
         private ServiceItem2[] GetFakeArrivals()
         {
-            using (var reader = new StreamReader("arrivals.json"))
+            using (var reader = new StreamReader("test/arrivals.json"))
             {
                 var json = reader.ReadToEnd();
                 return JsonConvert.DeserializeObject<ServiceItem2[]>(json);
@@ -72,7 +72,7 @@ namespace trains.test
 
         private ServiceItem2[] GetFakeDepartures()
         {
-            using (var reader = new StreamReader("departures.json"))
+            using (var reader = new StreamReader("test/departures.json"))
             {
                 var json = reader.ReadToEnd();
                 return JsonConvert.DeserializeObject<ServiceItem2[]>(json);
