@@ -3683,6 +3683,8 @@ namespace LDBWS
     /// <param name="clientCredentials">The client credentials</param>
     static partial void ConfigureEndpoint(System.ServiceModel.Description.ServiceEndpoint serviceEndpoint, System.ServiceModel.Description.ClientCredentials clientCredentials);
         
+        public LDBServiceSoapClient() { }
+
         public LDBServiceSoapClient(EndpointConfiguration endpointConfiguration) : 
                 base(LDBServiceSoapClient.GetBindingForEndpoint(endpointConfiguration), LDBServiceSoapClient.GetEndpointAddress(endpointConfiguration))
         {
@@ -3715,7 +3717,7 @@ namespace LDBWS
             return base.Channel.GetDepartureBoardAsync(request);
         }
         
-        public System.Threading.Tasks.Task<LDBWS.GetDepartureBoardResponse> GetDepartureBoardAsync(LDBWS.AccessToken AccessToken, ushort numRows, string crs, string filterCrs, LDBWS.FilterType filterType, int timeOffset, int timeWindow)
+        public virtual System.Threading.Tasks.Task<LDBWS.GetDepartureBoardResponse> GetDepartureBoardAsync(LDBWS.AccessToken AccessToken, ushort numRows, string crs, string filterCrs, LDBWS.FilterType filterType, int timeOffset, int timeWindow)
         {
             LDBWS.GetDepartureBoardRequest inValue = new LDBWS.GetDepartureBoardRequest();
             inValue.AccessToken = AccessToken;
@@ -3734,7 +3736,7 @@ namespace LDBWS
             return base.Channel.GetArrivalBoardAsync(request);
         }
         
-        public System.Threading.Tasks.Task<LDBWS.GetArrivalBoardResponse> GetArrivalBoardAsync(LDBWS.AccessToken AccessToken, ushort numRows, string crs, string filterCrs, LDBWS.FilterType filterType, int timeOffset, int timeWindow)
+        public virtual System.Threading.Tasks.Task<LDBWS.GetArrivalBoardResponse> GetArrivalBoardAsync(LDBWS.AccessToken AccessToken, ushort numRows, string crs, string filterCrs, LDBWS.FilterType filterType, int timeOffset, int timeWindow)
         {
             LDBWS.GetArrivalBoardRequest inValue = new LDBWS.GetArrivalBoardRequest();
             inValue.AccessToken = AccessToken;

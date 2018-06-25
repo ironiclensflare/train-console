@@ -35,9 +35,9 @@ namespace trains.test
             Assert.IsNotEmpty(trains);
         }
 
-        private LDBServiceSoap GetMockLdbService()
+        private LDBServiceSoapClient GetMockLdbService()
         {
-            var service = new Mock<LDBServiceSoap>();
+            var service = new Mock<LDBServiceSoapClient>();
 
             var fakeArrivals = new GetArrivalBoardResponse
             {
@@ -55,8 +55,28 @@ namespace trains.test
                 }
             };
 
-            service.Setup(s => s.GetArrivalBoardAsync(It.IsAny<GetArrivalBoardRequest>())).Returns(Task.FromResult(fakeArrivals));
-            service.Setup(s => s.GetDepartureBoardAsync(It.IsAny<GetDepartureBoardRequest>())).Returns(Task.FromResult(fakeDepartures));
+            service.Setup(s => s.GetArrivalBoardAsync(
+                It.IsAny<AccessToken>(),
+                It.IsAny<ushort>(),
+                It.IsAny<string>(),
+                It.IsAny<string>(),
+                It.IsAny<FilterType>(),
+                It.IsAny<int>(),
+                It.IsAny<int>())).Returns(Task.FromResult(fakeArrivals)
+            );
+
+            service.Setup(s => s.GetDepartureBoardAsync(
+                It.IsAny<AccessToken>(),
+                It.IsAny<ushort>(),
+                It.IsAny<string>(),
+                It.IsAny<string>(),
+                It.IsAny<FilterType>(),
+                It.IsAny<int>(),
+                It.IsAny<int>())).Returns(Task.FromResult(fakeDepartures)
+            );
+
+            // service.Setup(s => s.GetArrivalBoardAsync(It.IsAny<GetArrivalBoardRequest>())).Returns(Task.FromResult(fakeArrivals));
+            // service.Setup(s => s.GetDepartureBoardAsync(It.IsAny<GetDepartureBoardRequest>())).Returns(Task.FromResult(fakeDepartures));
 
             return service.Object;
         }

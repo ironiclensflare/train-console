@@ -7,53 +7,48 @@ namespace trains.services
 {
     public class TrainService
     {
-        private readonly LDBServiceSoap _service;
+        // TODO: Need to mock this
+        private readonly LDBServiceSoapClient _ldbService;
 
         public TrainService()
         {
-            _service = new LDBServiceSoapClient(EndpointConfiguration.LDBServiceSoap);
+            _ldbService = new LDBServiceSoapClient(EndpointConfiguration.LDBServiceSoap);
         }
 
-        public TrainService(LDBServiceSoap ldbService)
+        public TrainService(LDBServiceSoapClient ldbService)
         {
-            _service = ldbService;
+            _ldbService = ldbService;
         }
 
         public IEnumerable<ServiceItem2> GetTrainsTo(string crsFrom, string crsTo)
         {
             if (string.IsNullOrEmpty(crsFrom) || string.IsNullOrEmpty(crsTo)) throw new ArgumentException ("CRS cannot be null or empty.");
-            var request = new GetDepartureBoardRequest
+            var trains = _ldbService.GetDepartureBoardAsync
             (
-                new AccessToken{TokenValue = Environment.GetEnvironmentVariable("LDBWS_TOKEN")},
+                new LDBWS.AccessToken{TokenValue = Environment.GetEnvironmentVariable("LDBWS_TOKEN")},
                 10,
                 crsFrom.ToUpper(),
                 crsTo.ToUpper(),
-                FilterType.to,
+                LDBWS.FilterType.to,
                 0,
                 60
             );
-
-            var trains = _service.GetDepartureBoardAsync(request);
-
             trains.Wait();
             return trains.Result.GetStationBoardResult.trainServices;
         }
 
         public IEnumerable<ServiceItem2> GetTrainsFrom(string crsTo, string crsFrom)
         {
-            var request = new GetArrivalBoardRequest
+            var trains = _ldbService.GetArrivalBoardAsync
             (
-                new AccessToken{TokenValue = Environment.GetEnvironmentVariable("LDBWS_TOKEN")},
+                new LDBWS.AccessToken{TokenValue = Environment.GetEnvironmentVariable("LDBWS_TOKEN")},
                 10,
                 crsTo.ToUpper(),
                 crsFrom.ToUpper(),
-                FilterType.from,
+                LDBWS.FilterType.from,
                 0,
                 60
             );
-
-            var trains = _service.GetArrivalBoardAsync(request);
-
             trains.Wait();
             return trains.Result.GetStationBoardResult.trainServices;    
         }
