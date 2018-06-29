@@ -38,8 +38,13 @@ namespace trains
 
             var service = new TrainService();
             var departures = service.GetTrainsTo(crsFrom, crsTo);
-            Console.WriteLine($"There are {departures.Count()} total departures.");
-            var times = departures.Select(d => $"{d.std} ({d.etd}) - Platform {d.platform}");
+            if (departures == null)
+            {
+                Console.WriteLine("No trains were found.");
+                return;
+            }
+            Console.WriteLine($"There are {departures.Count()} total departures from {crsFrom.ToUpper()} to {crsTo.ToUpper()}.");
+            var times = departures.Select(d => $"{d.std} ({d.etd}) - Platform {d.platform ?? "Unknown"}");
             Console.WriteLine(string.Join(Environment.NewLine, times));
         }
 

@@ -46,7 +46,7 @@ namespace trains.services
                 new AccessToken{TokenValue = Environment.GetEnvironmentVariable("LDBWS_TOKEN")},
                 10,
                 crsTo.ToUpper(),
-                crsFrom.ToUpper(),
+                crsFrom?.ToUpper(),
                 FilterType.from,
                 0,
                 60
