@@ -45,8 +45,24 @@ namespace trains.test
         [TestCase]
         public void ParseRequest_DeparturesShorthand_ShouldRouteCorrectly()
         {
-            _client.ParseRequest(new[] {"NOT", "BHM"});
+            _client.ParseRequest(new[] { "NOT", "BHM" });
             _mockService.Verify(s => s.GetTrainsTo("NOT", "BHM"), Times.Once);
+        }
+
+        [TestCase("dep")]
+        [TestCase("departing")]
+        public void ParseRequest_Departures_ShouldRouteCorrectly(string arg)
+        {
+            _client.ParseRequest(new[] { arg, "NOT", "BHM" });
+            _mockService.Verify(s => s.GetTrainsTo("NOT", "BHM"), Times.Once);
+        }
+
+        [TestCase("arr")]
+        [TestCase("arriving")]
+        public void ParseRequest_Arrivals_ShouldRouteCorrectly(string arg)
+        {
+            _client.ParseRequest(new[] { arg, "BHM", "NOT" });
+            _mockService.Verify(s => s.GetTrainsFrom("BHM", "NOT"), Times.Once);
         }
     }
 }

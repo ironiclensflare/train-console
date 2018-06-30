@@ -63,6 +63,11 @@ namespace trains
             crsTo = args[1];
             crsFrom = args.Length == 3 ? args[2] : null;
             var arrivals = _service.GetTrainsFrom(crsTo, crsFrom);
+            if (arrivals == null)
+            {
+                Console.WriteLine("No trains were found.");
+                return;
+            }
             var times = arrivals.Select(a => $"{a.sta} {a.origin[0].locationName} ({a.eta}) - Platform {a.platform ?? "Unknown"}");
             Console.WriteLine($"Showing arrivals into {crsTo} from {crsFrom ?? "everywhere"}.");
             Console.WriteLine(string.Join(Environment.NewLine, times));
