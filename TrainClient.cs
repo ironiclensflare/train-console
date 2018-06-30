@@ -32,7 +32,7 @@ namespace trains
             }
         }
 
-        public void GetDepartures(string[] args)
+        private void GetDepartures(string[] args)
         {   
             string crsFrom, crsTo;
             if (args[0] == "departing" || args[0] == "dep")
@@ -57,7 +57,7 @@ namespace trains
             Console.WriteLine(string.Join(Environment.NewLine, times));
         }
 
-        public void GetArrivals(string[] args)
+        private void GetArrivals(string[] args)
         {
             string crsTo, crsFrom;
             crsTo = args[1];
