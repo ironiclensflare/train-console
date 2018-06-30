@@ -24,6 +24,15 @@
                 "/usr/local/bin/"
             ],
             "problemMatcher": []
+        },
+        {
+            "label": "render UML",
+            "command": "plantuml",
+            "type": "shell",
+            "args": [
+                "docs/*.puml"
+            ],
+            "problemMatcher": []
         }
     ]
 }
