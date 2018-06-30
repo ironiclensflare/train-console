@@ -1,0 +1,37 @@
+@startuml
+title Classes
+
+class TrainClient {
+    -TrainService _service
+    TrainClient(trainService)
+    void ParseRequest(args)
+    -void GetDepartures(args)
+    -void GetArrivals(args)
+}
+
+interface ITrainClient {
+    void ParseRequest(args)
+}
+
+class TrainService {
+    -LDBServiceSoap _service
+    TrainService()
+    TrainService(ldbServiceSoap)
+    ServiceItem2[] GetTrainsTo(crsFrom, crsTo)
+    ServiceItem2[] GetTrainsFrom(crsTo, crsFrom)
+}
+
+interface ITrainService {
+    ServiceItem2[] GetTrainsTo(crsFrom, crsTo)
+    ServiceItem2[] GetTrainsFrom(crsTo, crsFrom)
+}
+
+interface LDBServiceSoap {
+}
+
+ITrainClient <|-- TrainClient
+TrainService <-- TrainClient
+ITrainService <|-- TrainService
+LDBServiceSoap <-- TrainService
+
+@enduml
