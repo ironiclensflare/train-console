@@ -59,10 +59,18 @@ namespace trains.test
 
         [TestCase("arr")]
         [TestCase("arriving")]
-        public void ParseRequest_Arrivals_ShouldRouteCorrectly(string arg)
+        public void ParseRequest_ArrivalsWithOrigin_ShouldRouteCorrectly(string arg)
         {
             _client.ParseRequest(new[] { arg, "BHM", "NOT" });
             _mockService.Verify(s => s.GetTrainsFrom("BHM", "NOT"), Times.Once);
+        }
+
+        [TestCase("arr")]
+        [TestCase("arriving")]
+        public void ParseRequest_ArrivalsWithoutOrigin_ShouldRouteCorrectly(string arg)
+        {
+            _client.ParseRequest(new[] { arg, "BHM" });
+            _mockService.Verify(s => s.GetTrainsFrom("BHM", null), Times.Once);
         }
     }
 }

@@ -10,6 +10,20 @@
                 "${workspaceFolder}/trains.csproj"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "compile",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "publish",
+                "--self-contained",
+                "-r",
+                "osx.10.12-x64",
+                "-o",
+                "/usr/local/bin/"
+            ],
+            "problemMatcher": []
         }
     ]
 }
