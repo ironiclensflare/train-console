@@ -1,4 +1,5 @@
 # Train Console
+
 [![Build Status](https://travis-ci.org/ironiclensflare/train-console.svg?branch=master)](https://travis-ci.org/ironiclensflare/train-console)
 
 This is a simple console application to let you check when the next trains are for a given journey.
