@@ -5,7 +5,13 @@ using static LDBWS.LDBServiceSoapClient;
 
 namespace trains.services
 {
-    public class TrainService
+    public interface ITrainService
+    {
+        IEnumerable<ServiceItem2> GetTrainsTo(string crsFrom, string crsTo);
+        IEnumerable<ServiceItem2> GetTrainsFrom(string crsTo, string crsFrom);
+    }
+
+    public class TrainService : ITrainService
     {
         private readonly LDBServiceSoap _service;
 
