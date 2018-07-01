@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using LDBWS;
 using trains.services;
 
 namespace trains
@@ -70,7 +72,21 @@ namespace trains
             }
             var times = arrivals.Select(a => $"{a.sta} {a.origin[0].locationName} ({a.eta}) - Platform {a.platform ?? "Unknown"}");
             Console.WriteLine($"Showing arrivals into {crsTo} from {crsFrom ?? "everywhere"}.");
-            Console.WriteLine(string.Join(Environment.NewLine, times));
+            BuildTable(arrivals);
+            //Console.WriteLine(string.Join(Environment.NewLine, times));
+        }
+
+        private void BuildTable(IEnumerable<ServiceItem2> trains)
+        {
+            var longestOrigin = trains.Max(t => t.origin[0].locationName.Length);
+
+            Console.WriteLine("{0," + -longestOrigin + "} {1, 10}", "From", "Platform");
+            Console.WriteLine(new String('=', longestOrigin + 11));
+            
+            foreach (var train in trains)
+            {
+                Console.WriteLine("{0," + -longestOrigin + "} {1, 10}", train.origin[0].locationName, train.platform ?? "??");
+            }
         }
     }
 }
