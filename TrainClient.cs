@@ -71,7 +71,9 @@ namespace trains
                 return;
             }
             var times = arrivals.Select(a => $"{a.sta} {a.origin[0].locationName} ({a.eta}) - Platform {a.platform ?? "Unknown"}");
-            Console.WriteLine($"Showing arrivals into {crsTo} from {crsFrom ?? "everywhere"}.");
+
+            // TODO: Do uppercase CRS conversion better.
+            Console.WriteLine($"Showing arrivals into {crsTo.ToUpper()} from {(crsFrom != null ? crsFrom.ToUpper() : "everywhere")}.");
             BuildTable(arrivals);
             //Console.WriteLine(string.Join(Environment.NewLine, times));
         }
