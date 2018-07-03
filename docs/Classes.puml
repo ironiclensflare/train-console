@@ -7,6 +7,7 @@ class TrainClient {
     void ParseRequest(args)
     -void GetDepartures(args)
     -void GetArrivals(args)
+    -void BuildTable(trains)
 }
 
 interface ITrainClient {

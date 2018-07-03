@@ -75,9 +75,9 @@ namespace trains
             // TODO: Do uppercase CRS conversion better.
             Console.WriteLine($"Showing arrivals into {crsTo.ToUpper()} from {(crsFrom != null ? crsFrom.ToUpper() : "everywhere")}.");
             BuildTable(arrivals);
-            //Console.WriteLine(string.Join(Environment.NewLine, times));
         }
 
+        // TODO: Make this into a more generic array-to-table converter.
         private void BuildTable(IEnumerable<ServiceItem2> trains)
         {
             var longestOrigin = trains.Max(t => t.origin[0].locationName.Length);
