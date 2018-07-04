@@ -54,7 +54,7 @@ namespace trains
                 Console.WriteLine("No trains were found.");
                 return;
             }
-            Console.WriteLine($"There are {departures.Count()} total departures from {crsFrom.ToUpper()} to {crsTo.ToUpper()}.");
+            Console.WriteLine($"There are {departures.Count()} total departures from {crsFrom.ToUpper()} to {crsTo.ToUpper()}.\n");
             var times = departures.Select(d => $"{d.std} ({d.etd}) - Platform {d.platform ?? "Unknown"}");
             Console.WriteLine(string.Join(Environment.NewLine, times));
         }
@@ -73,7 +73,7 @@ namespace trains
             var times = arrivals.Select(a => $"{a.sta} {a.origin[0].locationName} ({a.eta}) - Platform {a.platform ?? "Unknown"}");
 
             // TODO: Do uppercase CRS conversion better.
-            Console.WriteLine($"Showing arrivals into {crsTo.ToUpper()} from {(crsFrom != null ? crsFrom.ToUpper() : "everywhere")}.");
+            Console.WriteLine($"Showing arrivals into {crsTo.ToUpper()} from {(crsFrom != null ? crsFrom.ToUpper() : "everywhere")}.\n");
             BuildTable(arrivals);
         }
 
@@ -82,12 +82,12 @@ namespace trains
         {
             var longestOrigin = trains.Max(t => t.origin[0].locationName.Length);
 
-            Console.WriteLine("{0," + -longestOrigin + "} {1, 10}", "From", "Platform");
-            Console.WriteLine(new String('=', longestOrigin + 11));
+            Console.WriteLine("{0," + -longestOrigin + "}  {1, -9}  {2, -10}  {3, 10}", "From", "STA", "Platform", "Status");
+            Console.WriteLine(new String('=', longestOrigin + 35));
             
             foreach (var train in trains)
             {
-                Console.WriteLine("{0," + -longestOrigin + "} {1, 10}", train.origin[0].locationName, train.platform ?? "??");
+                Console.WriteLine("{0," + -longestOrigin + "}  {1, -9}  {2, -10}  {3, 10}", train.origin[0].locationName, train.sta, train.platform ?? "Unknown", train.eta);
             }
         }
     }
